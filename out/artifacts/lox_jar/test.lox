@@ -1,0 +1,19 @@
+fun makeCounter(){
+	var i = 0;
+	fun count(){
+		i = i+1;
+		print i;
+	}
+	return count;
+}
+
+fun emni(){
+	var i = 100;
+	print i;
+}
+
+var counter = makeCounter();
+for(var x = 0;x<5;x=x+1){
+	counter();
+}
+emni();
